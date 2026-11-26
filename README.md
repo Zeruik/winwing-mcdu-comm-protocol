@@ -6,6 +6,8 @@
 >
 > Please use the new repository for the latest code and documentation.
 > This repository will no longer receive updates.
+>
+> **中文：** 上游已停止维护此独立项目，最新代码和文档请查看 [OpenCockpit Wireless Bus](https://github.com/jcallano/opencockpit-wireless-bus)。
 
 ---
 
@@ -14,6 +16,13 @@
 **An open-source, reverse-engineered driver for the WinWing Airbus MCDU hardware.**
 
 This project provides the necessary protocol documentation and proof-of-concept code to interface with the WinWing MCDU without using the official "SimApp Pro" software. It is designed to facilitate the creation of wireless bridges (using ESP32) or custom integrations for flight simulators.
+
+## 中文简介
+
+这是 [jcallano/winwing-mcdu-comm-protocol](https://github.com/jcallano/winwing-mcdu-comm-protocol) 的分支，整理了 WinWing Airbus MCDU（多功能控制与显示单元）的 USB 通信协议，并提供 Python 参考驱动和基于 Arduino IDE（ESP32 Core 3.3.5）的 ESP32-S3 USB Host 示例。示例用于验证外设的按键读取和屏幕字符输出，可作为飞行模拟器座舱面板集成的起点。
+
+- [ESP32-S3 示例](src/esp32/esp32s3mcdudriverexample.ino)｜[Python 参考驱动](src/python/mcdu-driver.py)｜[协议文档](docs/protocol.md)
+- 这是非官方项目，与 WinWing 无隶属关系。原始研究及贡献者见下方致谢。
 
 ## 📚 Acknowledgements & Sources
 
